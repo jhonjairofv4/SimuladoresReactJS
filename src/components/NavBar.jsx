@@ -1,20 +1,24 @@
+import Logo from "../components/Imagenes/Logo.png"
+
 export function BarraDeMenu(){
 return (
     <div>
 		<nav class=" navbar navbar-expand-sm bg-dark navbar-dark ">
 			<a class="navbar-brand" href="index.js">
-			<img src="../Imagenes/Logo.png" alt="logo" />
+			<img src={Logo} alt="logo" />
 			</a>
 			<ul class="navbar-nav" >
-			<li class="nav-item" >
-			<a class="nav-link" href="#">Simuladores </a>
-			</li>
-
-			<li class="nav-item" >
-			<a class="nav-link" id="simuladores" href="index.html"></a>
-			</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                    Simuladores
+                </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" >Conversor de Tasas</a>
+                <a class="dropdown-item" >Calculadora de intereses</a>
+            </div>
+            </li>
 			</ul>
-			</nav>
+		</nav>
 	</div>
 
 )
