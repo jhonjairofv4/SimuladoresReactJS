@@ -1,6 +1,7 @@
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import {BarraDeMenu} from '../src/components/NavBar.jsx';
+import ItemListContainer from './ItemListContainer.jsx';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
        
         
         <BarraDeMenu />
+        <ItemListContainer />
+
       </header>
     </div>
   );
