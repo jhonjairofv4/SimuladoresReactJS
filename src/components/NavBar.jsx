@@ -16,7 +16,7 @@ return (
                     <a className="nav-link" href="#">Calculadora de intereses</a>
                  </li>
                  <li className="nav-item">
-                    {Cart()}
+                    {/* {Cart()} */}
                  </li>
 
 
