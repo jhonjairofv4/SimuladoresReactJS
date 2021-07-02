@@ -1,10 +1,10 @@
 
 
-function ItemListContainer (){
+function ItemListContainer ({greeting}){
     return (
            
         <div>
-            <h2>Greeting</h2>
+            <h2>{greeting}</h2>
 
         </div>
     )

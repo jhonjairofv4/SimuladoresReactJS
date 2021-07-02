@@ -1,6 +1,7 @@
-import Logo from "../components/Imagenes/Logo.png"
+import Logo from "../components/Imagenes/Logo.png";
+import {Cart} from 'C:/Users/jhonj/ProyectReactJS/simuladores/src/containers/Index';
 
-export function BarraDeMenu(){
+export const BarraDeMenu = ({Cart}) =>{
 return (
     <div>
 		<nav className=" navbar navbar-expand-sm bg-dark navbar-dark ">
@@ -8,16 +9,20 @@ return (
 			<img src={Logo} alt="logo" />
 			</a>
 			<ul className="navbar-nav" >
-                           <li class="nav-item">
-                     <a class="nav-link" href="#">TRM Actual</a>
+                 <li className="nav-item">
+                    <a className="nav-link" href="#">Conversor de Tasas</a>
                  </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Conversor de Tasas</a>
+                 <li className="nav-item">
+                    <a className="nav-link" href="#">Calculadora de intereses</a>
                  </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Calculadora de intereses</a>
+                 <li className="nav-item">
+                    {Cart()}
                  </li>
+
+
 			</ul>
+       
+
 		</nav>
 	</div>
 
